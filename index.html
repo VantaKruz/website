@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Zone</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="customToast" class="toast-notification">
+        <div class="toast-content">
+            <span class="toast-icon" id="toastIcon">✓</span>
+            <span class="toast-message" id="toastMessage">Your trial session request is confirmed!</span>
+        </div>
+    </div>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">FITNESS<SPAN>ZONE</SPAN></a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#programs">Programs</a>
+                <a href="#nutrition">Nutrition</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#transformations">Results</a>
+                <a href="gallery.html">Achievements and gallery</a>
+                <a href="#contact" class="btn btn-secondary">Book Free Trial</a>
+                <div class="theme-switch-wrapper">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" id="heroBanner" onmouseenter="playHeroVideo()" onmouseleave="pauseHeroVideo()">
+        <div class="hero-bg-img"></div>
+        <video id="heroVideo" muted loop playsinline preload="auto">
+            <source src="videos/background.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge">FIT • DANCE • STRENGTHEN • TRANSFORM</span>
+            <h1>Warje's Premier Women's<br>Fitness Studio</h1>
+            <p>A complete fitness destination exclusively for women, offering energetic cardio workouts, strength training, functional fitness, and expert nutritional guidance under one roof.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-outline">Start your journey today</a>
+            </div>
+            <p class="hero-subtext">Transform your body. Boost your confidence. Celebrate your strength.</p>
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Why Women Love Us</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>Women-Only Fitness Studio</h3>
+                    <p>A comfortable, safe, and empowering space designed exclusively for women to work out with confidence.</p>
+                </div>
+                <div class="card">
+                    <h3>Certified Trainers</h3>
+                    <p>Expert female coaches dedicated to guiding your form, boosting your motivation, and helping you scale exercises.</p>
+                </div>
+                <div class="card">
+                    <h3>Strength & Weight Loss</h3>
+                    <p>Result-driven programs calculated to optimize fat burn, build functional lean muscle, and elevate metabolism.</p>
+                </div>
+                <div class="card">
+                    <h3>Fun Dance-Based Workouts</h3>
+                    <p>High-energy group classes where heart-pumping cardio feels exactly like a dance party with an amazing community.</p>
+                </div>
+                <div class="card">
+                    <h3>Personalized Nutrition</h3>
+                    <p>Tailored dietary protocols and sustainable meal tracking strategies designed to fit your unique daily lifestyle.</p>
+                </div>
+                <div class="card">
+                    <h3>Supportive Community</h3>
+                    <p>An encouraging, judgment-free sisterhood of like-minded women lifting each other up at every single milestone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="programs" class="programs-section">
+        <div class="container">
+            <h2 class="section-title">Our Fitness Programs</h2>
+            <p class="section-subtitle">Discover the Workout That Matches Your Energy</p>
+            <div class="grid grid-3">
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>Zumba Fitness</h3>
+                    </div>
+                    <div class="program-body">
+                        <p>High-energy dance workouts that combine fitness and fun through exciting international rhythms.</p>
+                        <span class="program-meta">Calories Burned: 500-800/session</span>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>Bollywood Fitness</h3>
+                    </div>
+                    <div class="program-body">
+                        <p>Dance your way to fitness with the latest Bollywood hits and easy-to-follow choreography.</p>
+                        <span class="program-meta">Perfect For: Weight Loss • Cardio • Fun Fitness</span>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>Power Garba</h3>
+                    </div>
+                    <div class="program-body">
+                        <p>Traditional Garba meets modern fitness for a unique and exhilarating cardio experience.</p>
+                        <span class="program-meta">Perfect For: Endurance • Fat Loss • Stamina</span>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>Bench Aerobics</h3>
+                    </div>
+                    <div class="program-body">
+                        <p>An energetic step workout designed to strengthen legs, improve coordination, and boost cardiovascular fitness.</p>
+                        <span class="program-meta">Perfect For: Cardio • Toning • Endurance</span>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>Kick Boxing</h3>
+                    </div>
+                    <div class="program-body">
+                        <p>Punch, kick, sweat, and strengthen your body while building confidence and endurance.</p>
+                        <span class="program-meta">Perfect For: Fat Burning • Stress Relief • Strength</span>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>Strength & Core Training</h3>
+                    </div>
+                    <div class="program-body">
+                        <p>Build lean muscle, improve posture, and strengthen your core with guided resistance training.</p>
+                        <span class="program-meta">Perfect For: Strength • Toning • Body Shaping</span>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>CrossFit Training</h3>
+                    </div>
+                    <div class="program-body">
+                        <p>Challenge yourself with high-intensity workouts that improve overall fitness and athletic performance.</p>
+                        <span class="program-meta">Perfect For: Strength • Endurance • Fat Loss</span>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>Functional Training</h3>
+                    </div>
+                    <div class="program-body">
+                        <p>Train your body for everyday movements through practical and effective exercises.</p>
+                        <span class="program-meta">Perfect For: Mobility • Balance • Strength</span>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>Circuit Training</h3>
+                    </div>
+                    <div class="program-body">
+                        <p>A complete body workout using multiple exercise stations for maximum results.</p>
+                        <span class="program-meta">Perfect For: Weight Loss • Conditioning • Stamina</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="nutrition" class="nutrition-section">
+        <div class="container grid grid-2">
+            <div class="nutrition-text">
+                <h2 class="section-title left-align">Nutrition & Wellness</h2>
+                <p class="highlight-phrase">Eat Smart. Train Better. Live Healthier.</p>
+                <p>Our nutrition experts help you achieve sustainable results through personalized guidance and healthy lifestyle habits.</p>
+                <a href="#contact" class="btn btn-primary spacing-top">Schedule Consultation</a>
+            </div>
+            <div class="nutrition-offers">
+                <h3>We Offer:</h3>
+                <ul class="nutrition-list">
+                    <li>Weight Loss Nutrition Plans</li>
+                    <li>Fat Loss Coaching</li>
+                    <li>Healthy Meal Planning</li>
+                    <li>Lifestyle Modification</li>
+                    <li>Hydration Guidance</li>
+                    <li>Performance Nutrition</li>
+                    <li>Wellness Consultations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<section id="goals" class="goals-showcase-section">
+    <div class="container">
+        <h2 class="section-title">Our Fitness Goals</h2>
+            <p class="section-subtitle">Achieve your targets with dedicated tracks built for sustainable results.</p>
+                <div class="goals-showcase-grid">
+                    <div class="goal-showcase-card">
+                        <div class="goal-card-accent-bar"></div>
+                        <div class="goal-showcase-content">
+                            <span class="goal-numerical-index">01</span>
+                            <h3>Weight Loss</h3>
+                            <p>Burn calories efficiently and build clean nutritional habits through targeted high-energy group dynamics and tailored meal programs designed around your lifestyle.</p>
+                        </div>
+                    </div>
+                <div class="goal-showcase-card">
+                    <div class="goal-card-accent-bar"></div>
+                    <div class="goal-showcase-content">
+                        <span class="goal-numerical-index">02</span>
+                        <h3>Strength Training</h3>
+                        <p>Develop lean muscle architecture, protect bone density, and correct lifting mechanics using progressive resistance training structured for individual safety and long-term athletic capability.</p>
+                    </div>
+                </div>
+                    <div class="goal-showcase-card">
+                        <div class="goal-card-accent-bar"></div>
+                            <div class="goal-showcase-content">
+                                <span class="goal-numerical-index">03</span>
+                                <h3>Functional Fitness</h3>
+                                <p>Improve active ranges of motion, joint stability, and cardiorespiratory conditioning with practical training methods that increase agility and energy levels for daily movement patterns.</p>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="transformations" class="transformations-section">
+        <div class="container">
+            <h2 class="section-title">Member Transformations</h2>
+            <p class="section-subtitle">Real Women. Real Results.</p>
+            <div class="grid grid-2">
+                <div class="testimonial-card">
+                    <div class="rating">Rating: 5 / 5 Stars</div>
+                    <p class="quote">“I never thought losing weight could be enjoyable until I joined these classes. From Zumba to strength training, every workout was different and exciting. I've lost 13kg in 7 months, improved my stamina, and made some wonderful friends along the way!" The nutrition guidance completely changed my relationship with food. Instead of crash dieting, I learned healthy eating habits that I can follow for life. Thank you Hetal Mam for your Constant Support and Motivation, I highly Recommend FITNESS ZONE for a healthy weight loss journey”.</p>
+                    <p class="author">— Diksha</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">Rating: 5 / 5 Stars</div>
+                    <p class="quote">“The motivation, accountability, and positive environment kept me consistent. Here, I received excellent nutritional guidance along with motivating workout session which helped me lose 4kg in 2 months.. I never felt like I was on a strict diet—instead, I learned how to eat healthier and enjoy my meals. Highly recommended!"</p>
+                    <p class="author">— Varsha</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">Rating: 5/5 Stars</div>
+                    <p class="quote">"Every class left me feeling energized rather than exhausted. The combination of cardio, strength training, and nutrition advice helped me lose 10 kgs in 8 months naturally and sustainably. What makes this program unique is that it focuses on both fitness and nutrition. The meal plans were practical, easy to follow, and perfectly complemented the workouts. Thanks a lot Hetal Mam and Fitness zone”</p>
+                    <p class="author">— Payal Shinde</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">Rating: 5/5 Stars</div>
+                    <p class="quote">"I was nervous about joining because I had never exercised before. The trainer made me feel comfortable from day one. Six months later, I'm 10 kg lighter, stronger, and full of confidence. The nutrition counselling taught me how to make healthier food choices without giving up my favourite meals, Highly Recommended!”</p>
+                    <p class="author">— Prajakta</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">Rating: 5/5 Stars</div>
+                    <p class="quote">"I am absolutely thrilled with my transformation! In just 20 days, I lost 4.5 kg through a perfect combination of well-structured workouts and personalized nutrition guidance. The meal plan was practical, easy to follow, and never made me feel deprived. Every workout kept me motivated, and the constant support from Hetal helped me stay consistent. I feel lighter, stronger, more energetic, and much more confident. This program has truly changed my lifestyle, not just my weight!"</p>
+                    <p class="author">Adv. Savita Mane</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="schedule" class="schedule-section">
+        <div class="container">
+            <h2 class="section-title">Class Timings</h2>
+            <div class="table-container">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Shift</th>
+                            <th>Batch Timings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Morning Batches</strong></td>
+                            <td>
+                                <div>7:00 AM to 8:00 AM</div>
+                                <div style="margin-top: 5px;">8:00 AM to 9:00 AM</div>
+                                <div style="margin-top: 5px;">9:00 AM to 10:00 AM</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Evening Batch</strong></td>
+                            <td>6:30 PM to 7:30 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center spacing-top">
+                <a href="#contact" class="btn btn-outline dark-border">Book Your Preferred Batch</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="booking-section">
+        <div class="container max-width-sm">
+            <h2 class="section-title">Contact us</h2>
+            <p class="section-subtitle text-center">Experience the Energy. Feel the Difference.</p>
+            <form action="https://api.web3forms.com/submit" method="POST" class="trial-form" id="fitnessForm">
+                <input type="hidden" name="access_key" value="0cbcf69e-7856-4396-89d1-3f9c3383a929">
+                <input type="hidden" name="subject" value="New Lead From Fitness Zone Website">
+                <input type="hidden" name="from_name" value="Fitness Zone Web Portal">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" required placeholder="Enter your mobile number">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <label for="program">Preferred Program</label>
+                    <select id="program" name="program" required>
+                        <option value="" disabled selected>Select Program</option>
+                        <option value="Zumba Fitness">Zumba Fitness</option>
+                        <option value="Bollywood Fitness">Bollywood Fitness</option>
+                        <option value="Power Garba">Power Garba</option>
+                        <option value="Bench Aerobics">Bench Aerobics</option>
+                        <option value="Kick Boxing">Kick Boxing</option>
+                        <option value="Strength & Core Training">Strength & Core Training</option>
+                        <option value="CrossFit Training">CrossFit Training</option>
+                        <option value="Functional Training">Functional Training</option>
+                        <option value="Circuit Training">Circuit Training</option>
+                        <option value="Nutrition guidance">Nutrition guidance</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="timing">Available Batches</label>
+                    <select id="timing" name="timing" required>Batch Timings
+                        <option value="" disabled selected>Select Batch</option>
+                        <option value="7-8am">Morning 7:00-8:00</option>
+                        <option value="8-9am">Morning 8:00-9:00</option>
+                        <option value="9-10am">Morning 9:00-10:00</option>
+                        <option value="6.30-7.30pm">Evening 6:30-7:30</option>
+                    </select>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">I agree to be contacted regarding fitness programs.</label>
+                </div>
+                <button type="submit" id="submitBtn" class="btn btn-primary full-width">Book Free Trial Session</button>
+            </form>
+        </div>
+    </section>
+        <section class="disclaimer-section">
+        <div class="container max-width-md">
+            <div class="disclaimer-box">
+                <p class="disclaimer-title">Safety Notice & Medical Disclaimer</p>
+                <p class="disclaimer-text">
+                    For your safety and well-being, please inform your fitness trainer of any existing medical conditions, injuries, pregnancies, or health concerns before participating in any fitness session. Trainers reserve the right to modify exercises or recommend alternative movements based on your individual health requirements.
+                </p>
+            </div>
+        </div>
+    </section>
+    <script>
+    const form = document.getElementById('fitnessForm');
+    const submitBtn = document.getElementById('submitBtn');
+    function showNotification(message, isError = false) {
+        const toast = document.getElementById('customToast');
+        const toastMsg = document.getElementById('toastMessage');
+        const toastIcon = document.getElementById('toastIcon');
+        toastMsg.innerText = message;
+        toastIcon.innerText = isError ? "✕" : "✓";
+        if (isError) {
+            toast.classList.add('error');
+        } else {
+            toast.classList.remove('error');
+        }
+        toast.classList.add('show');
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 4000);
+    }
+    form.addEventListener('submit', function(e) 
+    {
+        e.preventDefault();
+        const originalText = submitBtn.innerText;
+        submitBtn.innerText = "Sending Request...";
+        submitBtn.disabled = true;
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        fetch('https://api.web3forms.com/submit', 
+        {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => 
+        {
+            let res = await response.json();
+            if (response.status == 200) 
+            {
+                showNotification('Thank you! Your trial session request is confirmed. We will contact you shortly.');
+                form.reset();
+            } else {
+                showNotification('Submission error: ' + res.message, true);
+            }
+        })
+        .catch(error => 
+        {
+            showNotification('Something went wrong. Please check your network connectivity and try again.', true);
+        })
+        .then(() => 
+        {
+            submitBtn.innerText = originalText;
+            submitBtn.disabled = false;
+        });
+    });
+    </script>
+    <footer class="footer">
+        <div class="container grid grid-2">
+            <div>
+                <h2>FITNESS<span>ZONE</span></h2>
+                <p class="footer-tagline">Strong Women. Stronger Community.</p>
+                <p class="footer-info">1st floor, bartakke jaltaran,near Karan Greens, Warje, Pune</p>
+                <p class="footer-info"><a href="https://maps.app.goo.gl/HbkvppEyjj28nBbS8" target="_blank" style="color: blue;">Location</a>
+                <p class="footer-info">Contact Number: +91 88063 92960</p>
+                <p class="footer-info">Email Address: hetalbhatt0@gmail.com</p>
+            </div>
+            <div class="social-links-div">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/fitnesszone__warje" style="color: blue;">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2021 Fitness Zone. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <a href="https://wa.me/918806392960?text=Hi%20Fitness%20Zone!%20I'm%20interested%20in%20booking%20a%20free%20Zumba%20trial%20session." 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer">
+    <span class="whatsapp-icon">💬</span>
+    <span class="whatsapp-text">Chat with Us</span>
+</a>
+<script>
+    const heroVideo = document.getElementById('heroVideo');
+    function playHeroVideo() 
+    {
+        if (heroVideo) 
+        {
+            heroVideo.currentTime = 0;
+            heroVideo.play().catch(err => 
+            {
+                console.log("Hero playback delayed until mouse frame completes activation:", err);
+            });
+        }
+    }
+    function pauseHeroVideo() 
+    {
+        if (heroVideo) 
+        {
+            heroVideo.pause();
+        }
+    }
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"b793985e77b5447c8295f6b97cb18577","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
